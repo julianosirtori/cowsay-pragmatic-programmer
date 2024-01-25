@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "cowsay",
     "cli",
@@ -8,7 +8,7 @@
   "author": "Juliano Sirtori <julianosirtori@gmail.com> (https://julianosirtori.dev/)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/julianosirtori/cowsay-pragmatic-programmer"
+    "url": "git+https://github.com/julianosirtori/cowsay-pragmatic-programmer.git"
   },
   "name": "cowsay-pragmatic-programmer",
   "module": "src/index.ts",
