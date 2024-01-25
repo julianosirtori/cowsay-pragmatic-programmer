@@ -13,3 +13,10 @@ export function cowsay(text: string) {
 	const output = say({ text });
 	return output;
 }
+
+export function printOnConsoleLog(){
+	const output = cowsay(getRandomTip())	
+	console.log(output);	
+}
+ 
+printOnConsoleLog()
