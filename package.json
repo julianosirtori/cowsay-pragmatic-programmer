@@ -1,4 +1,15 @@
 {
+  "version": "0.0.1",
+  "keywords": [
+    "cowsay",
+    "cli",
+    "pragmatic-programmer"
+  ],
+  "author": "Juliano Sirtori <julianosirtori@gmail.com> (https://julianosirtori.dev/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/julianosirtori/cowsay-pragmatic-programmer"
+  },
   "name": "cowsay-pragmatic-programmer",
   "module": "src/index.ts",
   "main": "dist/src/index.js",
@@ -30,5 +41,7 @@
   "dependencies": {
     "commander": "^11.1.0",
     "cowsay": "^1.5.0"
-  }
+  },
+  "license": "MIT"
 }
+
