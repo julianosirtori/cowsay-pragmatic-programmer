@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-beta-3",
+  "version": "1.0.2",
   "keywords": [
     "cowsay",
     "cli",
@@ -40,7 +40,7 @@
   ],
   "dependencies": {
     "commander": "^11.1.0",
-    "cowsay": "^1.5.0"
+    "cowsay": "^1.6.0"
   },
   "license": "MIT"
 }
