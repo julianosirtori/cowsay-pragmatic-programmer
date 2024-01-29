@@ -21,15 +21,11 @@
     "build": "bun run build.mts",
     "dev": "bun run build.mts && bun ./dist/index.js",
     "prepublishOnly": "bun run build",
-    "test": "vitest",
-    "format": "bunx @biomejs/biome format . --write ",
-    "lint": "bunx @biomejs/biome lint  . "
+    "test": "bun test"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.5.3",
     "@types/bun": "^1.0.4",
-    "bun-types": "latest",
-    "vitest": "^1.2.1"
+    "bun-types": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
