@@ -1,20 +1,14 @@
-import { getRandomTip, cowsay } from "./index";
-import { tips } from "@/data/data.json";
+import { expect, test } from "bun:test";
+import { getRandomIndex, cowWithRandomTip } from "./index";
 
 test("getRandomTip", () => {
-	const tip = getRandomTip();
-	expect(tips.includes(tip)).toBe(true);
+	const index = getRandomIndex();
+	expect(index).toBeNumber()
 });
 
-test("cowsay", () => {
-	const output = cowsay("Test ");
-
-	expect(output).toEqual(` _______
-< Test  >
- -------
-        \\   ^__^
-         \\  (oo)\\_______
-            (__)\\       )\\/\\
-                ||----w |
-                ||     ||`);
-});
+test("cowWithRandomTip", () => {
+	const cowWithTip = cowWithRandomTip();		
+	expect(cowWithTip).toContain(" (oo)\\")
+	expect(cowWithTip).toContain("(__)")
+	expect(cowWithTip).toContain("||----w |")
+})

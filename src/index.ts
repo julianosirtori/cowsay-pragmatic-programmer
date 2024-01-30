@@ -1,22 +1,21 @@
 #!/usr/bin/env node
 
-import { say } from "cowsay";
+import { cowsay } from "cowsayjs";
+import { tips } from "@/data.json";
 
-import { tips } from "@/data/data.json";
-import { getRandomInt } from "./utils/math";
-
-export function getRandomTip() {
-	return tips[getRandomInt(tips.length)];
+export function getRandomIndex() {
+  return Math.floor(Math.random() * tips.length);
 }
 
-export function cowsay(text: string) {
-	const output = say({ text });
-	return output;
+export function cowWithRandomTip(){
+  const index = getRandomIndex()  
+  const tip = `${index + 1}. ${tips[index]}`
+  return cowsay(tip)  
 }
 
-export function printOnConsoleLog(){
-	const output = cowsay(getRandomTip())	
-	console.log(output);	
+export function main(){
+  console.log(cowWithRandomTip());
 }
- 
-printOnConsoleLog()
+
+main()
+

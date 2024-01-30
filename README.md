@@ -1,15 +1,17 @@
 # cowsay-pragmatic-programmer
 
-To install dependencies:
+CLI para mostrar uma dica randômica do livro programador pragmático
+
+## Como instalar?
 
 ```bash
-bun install
+npm install cowsay-pragmatic-programmer -g
 ```
 
-To run:
+## Como usar
+
+1. Para gerar uma dica randômica.
 
 ```bash
-bun run index.ts
+cowsay-pragmatic-programmer
 ```
-
-This project was created using `bun init` in bun v1.0.18. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
