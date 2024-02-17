@@ -1,20 +1,15 @@
-#!/usr/bin/env node
+#!/usr/bin/env bun
 
-import { cowsay } from "cowsayjs";
-import { tips } from "@/data.json";
+import { printTipOfTheDay } from "@/tips/tipOfTheDay";
+import { printRandomTip } from "@/tips/randomTip";
 
-export function getRandomIndex() {
-  return Math.floor(Math.random() * tips.length);
-}
+export async function main(){
+  if(Bun.argv.includes('-d')){
+    printTipOfTheDay()
+    return
+  }
 
-export function cowWithRandomTip(){
-  const index = getRandomIndex()  
-  const tip = `${index + 1}. ${tips[index]}`
-  return cowsay(tip)  
-}
-
-export function main(){
-  console.log(cowWithRandomTip());
+  printRandomTip()
 }
 
 main()

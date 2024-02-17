@@ -1,5 +1,5 @@
 {
-  "version": "1.1.7",
+  "version": "1.2.0",
   "keywords": [
     "cowsay",
     "cli",
@@ -18,11 +18,10 @@
     "cowsay-pragmatic-programmer": "dist/index.js"
   },
   "scripts": {
-    "build": "bun build ./src/index.js --outdir ./dist --target node  ",
+    "build": "bun build ./src/index.js  --outdir ./dist --target bun  ",
     "build:watch": "bun run build --watch ",
     "prepublish": "bun test && bun run build",
-    "publish": "npm publish",
-    "test": "bun test"
+    "publish": "npm publish"
   },
   "devDependencies": {
     "@types/bun": "^1.0.4",
